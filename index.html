@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Hack Club - Bento YSWS</title>
+    <title>Bento</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +13,19 @@
 
   <body>
     <section id="top">
+      <a href="https://hackclub.com/"
+        ><img
+          style="
+            position: absolute;
+            top: 0;
+            left: 10px;
+            border: 0;
+            width: 256px;
+            z-index: 999;
+          "
+          src="https://assets.hackclub.com/flag-orpheus-top.svg"
+          alt="Hack Club"
+      /></a>
       <img src="bento-ysws-logo.png" alt="Bento YSWS Logo" />
       <h3>
         Bento is a Clubs YSWS where you ship a project with a
@@ -21,6 +34,28 @@
         for bonus prizes!
       </h3>
       <p>Created by Jacob, Freddie and <strong>Sponsored by Jared</strong>!</p>
+      <div class="buttons">
+        <button
+          class="button"
+          onclick="window.location.href = 'leaders-zone.html'"
+        >
+          Leaders Zone
+        </button>
+        <button
+          class="button"
+          onclick="
+            window.location.href = 'https://clubs.hackclub.com/workshops'
+          "
+        >
+          Open + View Your Workshop
+        </button>
+        <button class="button" onclick="window.location.href = 'guide.html'">
+          Open our Members Guide
+        </button>
+      </div>
+    </section>
+    <section id="requirements">
+      <h1>Requirements</h1>
     </section>
   </body>
 </html>
