@@ -71,3 +71,16 @@ body {
 .brand-banner:hover img {
   transform: rotate(-4deg) scale(1.02);
 }
+
+#requirements {
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+#requirements h1 {
+  font-size: 46px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
