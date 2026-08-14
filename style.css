@@ -75,12 +75,12 @@ body {
 #requirements {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr;
   gap: 40px;
   padding: 40px;
   width: 100%;
   min-height: 100vh;
   box-sizing: border-box;
+  align-content: start;
   background: linear-gradient(to bottom, #f7e0b6, #ffffff);
 }
 
@@ -98,14 +98,8 @@ body {
   justify-content: flex-start;
 }
 
-.requirements-col-right .bento-card-secondary {
-  flex: 1;
-}
-
 .requirements-col-left .bento-card-checklist {
-  flex: 1;
   flex-direction: column;
-  justify-content: center;
   gap: 16px;
 }
 
@@ -188,13 +182,14 @@ body {
 #bonuses {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr;
   gap: 40px;
   padding: 40px;
   width: 100%;
   min-height: 100vh;
   box-sizing: border-box;
+  align-content: start;
   background: linear-gradient(to bottom, #ffffff, #4a148c);
+  border-bottom: 3px solid #ffedcb;
 }
 
 #bonuses > h1 {
@@ -245,4 +240,59 @@ body {
 .bonus-card a {
   color: #4a148c;
   text-decoration: underline;
+}
+
+#faq {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 40px;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  align-content: start;
+  background: linear-gradient(to bottom, #f7e0b6, #ffffff);
+}
+
+#faq > h1 {
+  grid-column: 1 / -1;
+  font-size: 46px;
+  margin: 0;
+  color: #5a4310;
+}
+
+#faq details {
+  border: 3px solid #005248;
+  border-radius: 8px;
+  background: #ffedcb;
+  padding: 20px;
+}
+
+#faq summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  color: #005248;
+}
+
+#faq summary::-webkit-details-marker {
+  display: none;
+}
+
+#faq summary::before {
+  content: "+";
+  margin-right: 8px;
+  color: #005248;
+}
+
+#faq details[open] summary::before {
+  content: "\2212"; /* ai says this is unicode for a minus sign, im not insane */
+}
+
+#faq p {
+  margin: 12px 0 0;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #005248;
 }
