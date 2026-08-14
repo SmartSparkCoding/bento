@@ -296,3 +296,14 @@ body {
   line-height: 1.4;
   color: #005248;
 }
+
+footer {
+  border-top: 2px solid #d29723;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: #d29723;
+}
