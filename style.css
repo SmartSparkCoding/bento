@@ -18,7 +18,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(to top, #ffedcb, #d29723);
+  background: linear-gradient(to top, #f7e0b6, #d29723);
 }
 
 #top > img {
@@ -73,14 +73,114 @@ body {
 }
 
 #requirements {
-  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 40px;
+  padding: 40px;
   width: 100%;
   min-height: 100vh;
   box-sizing: border-box;
+  background: linear-gradient(to bottom, #ffedcb, #ffffff);
 }
 
-#requirements h1 {
+#requirements > h1 {
   font-size: 46px;
-  margin-top: 20px;
-  margin-left: 20px;
+  margin: 0;
+  grid-column: 1 / -1;
+  color: #5a4310;
+}
+
+.requirements-col {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: flex-start;
+}
+
+.requirements-col-right .bento-card-secondary {
+  flex: 1;
+}
+
+.requirements-col-left .bento-card-checklist {
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.bento-card-primary,
+.bento-card-secondary {
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 8px;
+  border: 3px solid #005248;
+  background: #ffd98e;
+}
+
+.bento-card-primary {
+  background: #ffd98e;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.bento-card-secondary {
+  background: #cfead1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.bento-card-secondary:last-child {
+  background: #ffd4cf;
+}
+
+.bento-card-checklist {
+  background: #e9dbf3;
+}
+
+.bento-card-primary h1,
+.bento-card-secondary h1 {
+  font-size: 40px;
+  margin: 0;
+  color: #005248;
+}
+
+.bento-card-primary p,
+.bento-card-secondary p {
+  margin: 12px 0 0;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #005248;
+}
+
+.card-icon {
+  color: #005248;
+}
+
+.card-icon {
+  width: 64px;
+  height: 64px;
+  stroke-width: 1.5;
+  flex-shrink: 0;
+}
+
+.checklist {
+  margin-top: 0;
+}
+
+.checklist label {
+  display: block;
+  font-size: 18px;
+  color: #005248;
+  margin-bottom: 10px;
+}
+
+.checklist input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #005248;
+  margin-right: 8px;
+  vertical-align: middle;
 }
